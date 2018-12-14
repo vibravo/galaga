@@ -54,7 +54,7 @@ function preload(){
 }
 	
 function setup() {
-	createCanvas(800, 800);
+	createCanvas(350, 800);
 	rectMode(RADIUS);	
 	theme.play();
 	

@@ -36,7 +36,6 @@ function preload(){
 	bulletpic = loadImage('bullets.png');
 	ship = loadImage('galaga_ship.png');
 	bee = loadImage('bee.png');
-	bossgalaga = loadImage('bossgalaga.png');
 	logo = loadImage('galagalogo.png');
 	boss = loadImage('boss.png');
 	
@@ -95,12 +94,10 @@ if (flag == 1){
 	//objects
 	galagaship = new shipobject(ship);
 	bees = new beeobject(bee);
-	bossga = new bossgalagaobject(bossgalaga);
 	
 	//resize images
 	ship.resize(50,0);
 	bee.resize(50,0);
-	bossgalaga.resize(50,0);
 	boss.resize(50,0);
 
 	//draw stars
@@ -112,7 +109,6 @@ if (flag == 1){
 	galagaship.move(ok,this.ratio);
 	galagaship.display();
 	galagaship.cdistance();
-	bossga.move();
 	
 	//score
 	fill(255);

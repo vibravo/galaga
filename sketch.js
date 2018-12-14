@@ -28,10 +28,6 @@ var NumOfRowsB = 2;
 var NumOfBosspRow = 10;
 var spaceBtwnColB = 30;
 var spaceBtwnBoss = 50;
- 
-//boss galaga object
-var bossga;
-var County = 0;
 
 var flag = 0;
 
@@ -88,7 +84,7 @@ function draw() {
 	rectMode(RADIUS);
 	imageMode (CENTER)
 	
-if (flag == 0){ // if mouse is clicked, do this
+if (flag == 0){ 
 	for(var i = 0; i < numberofstars; i++){
 		fill(random(0,255),random(0,255),random(0,255));				
 		rect(stararray[i].x,stararray[i].y,2,2);
@@ -333,24 +329,6 @@ this.PlaceImage = function(Step) {
 	 }
  }	
 }
-
- function bossgalagaobject(Img) {
-	this.img = Img
-	this.X = Img.x;
-	this.Y = Img.y;
-	
- this.PlaceImage = function() {
-	 image(this.img,this.X ,this.Y) 
- }
- this.move = function(){
-	 County = County + .2;
-   if (County > 600)
-		 County = 0;
-	 
-	 image(bossgalaga,100,-200+County);
- }
-}
-
 function star(){
 		this.x;
 		this.y;

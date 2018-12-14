@@ -115,9 +115,9 @@ if (flag == 1){
 	text('SCORE: '+bullet.length*10,600, 50);
 
 	//three ships
-	image(ship,20,750,30,30);
-	image(ship,50,750,30,30);
-	image(ship,80,750,30,30);
+	image(ship,20,490,30,30);
+	image(ship,50,490,30,30);
+	image(ship,80,490,30,30);
 	
 	//bullets kill bees
 	for (var i = 0; i < bullet.length; i++) {		
@@ -225,8 +225,8 @@ function shipobject(img) {
 	this.img = img;
 	this.InitX = 400;
 	this.X = img.X;
-	this.InitY = 700;
-	this.Y = 800;
+	this.InitY = 450;
+	this.Y = 450;
 	
 	this.move = function(step,ratio) {
 		this.X = this.InitX + step;
